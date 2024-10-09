@@ -10,7 +10,12 @@ function removeFromDisplay(){
     display.value = display.value.substring(0, display.value.length -1);
 }
 function caluclate(){
-    display.value = eval(display.value);
+    try {
+        display.value = eval(display.value);
+    } catch (error){
+        display.value = "Error!";
+    }
+    
 }
 
 // Background Animation........
