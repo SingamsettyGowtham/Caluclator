@@ -12,3 +12,13 @@ function removeFromDisplay(){
 function caluclate(){
     display.value = eval(display.value);
 }
+
+// Background Animation........
+
+const bgAnimation = document.getElementById('bgAnimation');
+const numberOfcolorBoxes = 500;
+for (let i=0 ; i< numberOfcolorBoxes; i++){
+    const colorBox = document.createElement('div');
+    colorBox.classList.add('colorBox');
+    bgAnimation.append(colorBox);
+}
